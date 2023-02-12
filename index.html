@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>iCoder-asset of coder</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">iCoder</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Topics
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Techonlogy</a>
+                        <a class="dropdown-item" href="#">Web-Development</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Support</a>
+                        <a class="dropdown-item" href="#">Write for us</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html">Contact us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+
+            <div class="mx-2">
+                <button data-toggle="modal" data-target="#LoginModal" class="btn btn-danger">Login</button>
+                <button data-toggle="modal" data-target="#SignUpModal" class="btn btn-danger">SignUp</button>
+
+
+
+                <!-- LoginModal -->
+                <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="LoginModalLabel">Login to your account</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                      <label for="enterEmail1">Email address</label>
+                                      <input type="email" class="form-control" id="enterEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="enterPassword1">Password</label>
+                                      <input type="password" class="form-control" id="enterPassword1" placeholder="Password">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Login</button>
+                                  </form>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Signup Modal -->
+            <div class="modal fade" id="SignUpModal" tabindex="-1" role="dialog" aria-labelledby="SignUpModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="SignUpModalLabel">Create your account</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                  <label for="CreateEmail1">Email address</label>
+                                  <input type="email" class="form-control" id="CreateEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                  <label for="CreatePassword">Password</label>
+                                  <input type="password" class="form-control" id="CreatePassword" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="ConfirmPassword">Confirm-Password</label>
+                                    <input type="password" class="form-control" id="ConfirmPassword" placeholder="Confirm-Password">
+                                  </div>
+                               
+                                <button type="submit" class="btn btn-primary">Create</button>
+                              </form>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="1.jpg" alt="First slide" width="1000px" height="450px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to iCoder</h5>
+                    <p>Techonlogy,Development and Trends</p>
+                    <button class="btn btn-danger">Techonlogy
+                    </button>
+                    <button class="btn btn-primary">Web-Development</button>
+                    <button class="btn btn-success">Tech-Fun</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="2.jpg" alt="Second slide" width="1000px" height="450px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to my Blog</h5>
+                    <p>Techonlogy,Development and Trends</p>
+                    <button class="btn btn-danger">Techonlogy
+                    </button>
+                    <button class="btn btn-primary">Web-Development</button>
+                    <button class="btn btn-success">Tech-Fun</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="3.jpg" alt="Third slide" width="1000px" height="450px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Awarded for excellence</h5>
+                    <p>Techonlogy,Development and Trends</p>
+                    <button class="btn btn-danger">Techonlogy
+                    </button>
+                    <button class="btn btn-primary">Web-Development</button>
+                    <button class="btn btn-success">Tech-Fun</button>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="container my-4">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-primary">World</strong>
+                        <h3 class="mb-0">
+                            <a class="text-dark" href="#">Global Conferences</a>
+                        </h3>
+                        <div class="mb-1 text-muted">Nov 12</div>
+                        <p class="card-text mb-auto">Confernce about the day of celebrating coding</p>
+                        <a href="#">Continue reading</a>
+                    </div>
+                    <img class="card-img-right flex-auto d-none d-lg-block" style="width: 200px; height: 250px; "
+                        src="thumb1.jpg">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-success">Design</strong>
+                        <h3 class="mb-0">
+                            <a class="text-dark" href="#">Learn Designing</a>
+                        </h3>
+                        <div class="mb-1 text-muted">Nov 11</div>
+                        <p class="card-text mb-auto">Mern and Mean stack are the two things which are on demand for a
+                            full stack developer.</p>
+                        <a href="#">Continue reading</a>
+                    </div>
+                    <img class="card-img-right flex-auto d-none d-lg-block" style="width: 200px; height: 250px;"
+                        src="thumb2.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-4">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-danger">News</strong>
+                        <h3 class="mb-0">
+                            <a class="text-dark" href="#">Hacker Attacks</a>
+                        </h3>
+                        <div class="mb-1 text-muted">Nov 12</div>
+                        <p class="card-text mb-auto">The UN'S data has been hacked and were under negations with hacker.
+                        </p>
+                        <a href="#">Continue reading</a>
+                    </div>
+                    <img class="card-img-right flex-auto d-none d-lg-block" style="width: 200px; height: 250px; "
+                        src="thumb3.jpg">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-warning">Rank</strong>
+                        <h3 class="mb-0">
+                            <a class="text-dark" href="#">Hackathon</a>
+                        </h3>
+                        <div class="mb-1 text-muted">Nov 11</div>
+                        <p class="card-text mb-auto">Registration fee for Hackathon is on a whooping scale. </p>
+                        <a href="#">Continue reading</a>
+                    </div>
+                    <img class="card-img-right flex-auto d-none d-lg-block" style="width: 200px; height: 250px;"
+                        src="thumb4.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>© 2022-2023 iCoder, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
